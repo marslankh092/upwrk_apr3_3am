@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/option_jobs"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="JOBS " />
+
+
+    <item
+        android:id="@+id/option_proposals"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="PROPOSALS " />
+
+
+    <item
+        android:id="@+id/option_messages"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="MESSAGES " />
+
+
+    <item
+        android:id="@+id/option_notifications"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="NOTIFICATIONS " />
+
+
+    <item
+        android:id="@+id/option_profiles"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="PROFILE " />
+
+
+</menu>
+
+

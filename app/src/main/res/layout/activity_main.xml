@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom_navigation_card">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="3dp"
+                    app:cardBackgroundColor="#FAFAFA"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/general_text"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corner_buttons"
+                             android:gravity="center"
+                            android:text="Genral "
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/product_design_text"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                              android:gravity="center"
+                            android:text="Product Design "
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:id="@+id/mobile_ux_design"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                             android:gravity="center"
+                            android:text="Mobile UX Design "
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_navigation_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:menu="@menu/bottom_navigation_1"
+                app:itemIconTint="#6EB943"
+                app:itemTextColor="#D1D1D1" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
